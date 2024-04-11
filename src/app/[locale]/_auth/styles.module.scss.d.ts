@@ -1,0 +1,11 @@
+export declare const authLinksWrapper: string;
+export declare const contentWrapper: string;
+export declare const counterStyles: string;
+export declare const editCounterBtnsWrapper: string;
+export declare const editCounterWrapper: string;
+export declare const inner: string;
+export declare const languageSwitchWrapper: string;
+export declare const logo: string;
+export declare const logoWrapper: string;
+export declare const title: string;
+export declare const wrapper: string;

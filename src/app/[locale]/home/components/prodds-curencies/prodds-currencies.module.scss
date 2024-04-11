@@ -1,0 +1,55 @@
+.proddsCurrenciesWrapperDark {
+	background-color: var(--grey-70);
+}
+
+.proddsCurrenciesWrapperLight {
+	background-color: var(--grey-20);
+}
+
+.proddsCurrenciesTitleWrapper {
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 29.26px;
+	letter-spacing: -0.02em;
+	text-align: left;
+	color: var(--primary);
+}
+
+.proddsCurrenciesWrapper {
+	display: flex;
+	align-items: top;
+	justify-content: space-between;
+	height: 313px;
+	border-radius: 15px;
+	width: 1320px;
+	padding: 0px 36px;
+	margin: 60px;
+}
+
+
+.proddsCurrenciesImageWrapper {
+	margin-top: -80px;
+}
+
+.proddsCurrenciesTextWrapper {
+	display: flex; 
+	flex-direction: column; 
+	width: 562px; 
+	margin-top: 36px; 
+	height: 191px; 
+	gap: 26px;
+}
+
+.proddsCurrenciesDescription {
+	font-weight: 700;
+	font-size: 32px; 
+	line-height: 40px;
+}
+
+.proddsCurrenciesDescriptionDark {
+	color: var(--white);
+}
+
+.proddsCurrenciesDescriptionLight {
+	color: var(--grey-100);
+}

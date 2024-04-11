@@ -1,0 +1,15 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-x: hidden;
+	min-width: 320px;
+}
+
+.wrapperDark {
+	background-color: var(--grey-90);
+}
+
+.wrapperLight {
+	background-color: var(--white);
+}

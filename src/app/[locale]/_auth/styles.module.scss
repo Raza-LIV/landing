@@ -1,0 +1,66 @@
+.editCounterWrapper {
+	display: grid;
+	justify-content: center;
+	background-color: var(--accent-color);
+}
+
+.editCounterBtnsWrapper {
+	display: flex;
+	gap: 10px;
+}
+
+.counterStyles {
+	font-size: 24px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.logo {
+	width: 200px;
+	height: 200px;
+	object-fit: contain;
+}
+
+.logoWrapper {
+	margin: 0 auto;
+	display: flex;
+	gap: 10px;
+}
+
+.languageSwitchWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--accent-color);
+}
+
+.inner {
+	display: grid;
+	justify-content: center;
+	text-align: center;
+	gap: 10px;
+}
+
+.contentWrapper {
+	display: grid;
+	justify-content: center;
+	gap: 10px;
+}
+
+.title {
+	font-size: 42px;
+	font-weight: 400;
+}
+
+.authLinksWrapper {
+	display: flex;
+	flex-direction: column;
+}

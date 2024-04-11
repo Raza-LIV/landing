@@ -1,0 +1,137 @@
+.heroWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100vw;
+}
+
+/* Tablet devices (between 768px and 1024px width) */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.heroWrapper {
+		height: 500px;
+	}
+	.heroContentBlock {
+		height: 351px;
+		width: 444px;
+		margin: 0px calc(50vw - 222px);
+	}
+	.sloganText {
+		font-size: 40px;
+		line-height: 48px;
+	}
+	.descriptionText {
+		width: 400px;
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.textsHolder {
+		height: 228px;
+	}
+  }
+  
+  /* Small mobile devices (width less than 768px) */
+  @media (max-width: 767px) {
+	.heroWrapper {
+		height: 300px;
+	}
+	.heroContentBlock {
+		height: 240px;
+		width: 250px;
+		margin: 0px calc(50vw - 125px);
+	}
+	.sloganText {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.descriptionText {
+		width: 200px;
+		font-size: 10px;
+		line-height: 14px;
+	}
+	.textsHolder {
+		height:130px;
+	}
+  }
+  
+  /* Desktop and larger devices (width more than 1024px) */
+  @media (min-width: 1025px) {
+	.heroWrapper {
+		height: 820px;
+	}
+	.heroContentBlock {
+		height: 351px;
+		width: 888px;
+		margin: 0px calc(50vw - 444px);
+	}
+	.sloganText {
+		font-size: 60px;
+		line-height: 76px;
+	}
+	.descriptionText {
+		width: 600px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.textsHolder {
+		height: 228px;
+	}
+  }
+
+.heroWrapperDark {
+	background: radial-gradient(50% 50% at 50% 50%, #24262A 35.29%, #14161A 100%);
+}
+
+.heroWrapperLight {
+	background: radial-gradient(50% 50% at 50% 50%, #DCEEEE 35.29%, #F6F6F6 100%);
+}
+
+.heroContentBlock {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+
+	position: absolute;
+}
+
+.centeredText {
+	text-align: center;
+}
+
+.companyNameText {
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 39px;
+	color: var(--primary);
+}
+
+.sloganText {
+	font-weight: 700;
+}
+
+.sloganTextDark {
+	color: var(--grey-0);
+}
+
+.sloganTextLight {
+	color: var(--grey-90);
+}
+
+.descriptionText {
+	font-weight: 400;
+	color: var(--grey-40);
+}
+
+.textsHolder {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.textsBlock {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}

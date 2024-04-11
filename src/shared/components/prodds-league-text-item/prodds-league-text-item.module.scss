@@ -1,0 +1,36 @@
+.itemWrapper {
+	display: flex;
+	padding: 8px 0px 8px 36px;
+	width: 668px;
+	border-radius: 15px;
+}
+
+.itemWrapperDark {
+	background: linear-gradient(90deg, rgba(184, 230, 255, 0.17) 0%, rgba(0, 0, 0, 0) 38.32%);
+}
+
+.itemWrapperLight {
+	background: linear-gradient(90deg, rgba(70, 217, 255, 0.64) 0%, rgba(255, 255, 255, 0) 38.32%);
+}
+
+.ballIconWrapper {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	margin-top: -30px;
+	margin-left: -50px;
+}
+
+.textStyle {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 40px;
+}
+
+.textColoringDark {
+	color: var(--white);
+}
+
+.textColoringLight {
+	color: var(--grey-100);
+}

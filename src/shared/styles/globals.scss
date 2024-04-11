@@ -1,0 +1,71 @@
+@import "./theme.module.scss";
+@import "./spaces.module.scss";
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	background-color: var(--background);
+}
+
+:root {
+	width: 100%;
+	isolation: isolate;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--fredoka);
+	overflow-wrap: break-word;
+	margin-bottom: 0;
+}
+
+input,
+button,
+textarea,
+select {
+	font-family: var(--fredoka);
+}
+
+button {
+	cursor: pointer;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}

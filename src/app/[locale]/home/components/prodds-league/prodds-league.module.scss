@@ -1,0 +1,38 @@
+.proddsLeagueWrapperDark {
+	background-color: var(--grey-70);
+}
+
+
+.proddsLeagueWrapperLight {
+	background-color: var(--grey-20);
+}
+
+.ProddsLeagueTitleWrapper {
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 29.26px;
+	letter-spacing: -0.02em;
+	text-align: left;
+	color: var(--primary);
+}
+
+.proddsLeagueWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 1320px;
+	height: 629px;
+	border-radius: 15px;
+	padding: 0px 36px;
+	margin: 60px;
+}
+
+.proddsLeagueTextWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 36px;
+}
+
+.proddsLeagueImageWrapper {
+	margin-top: -200px;
+}

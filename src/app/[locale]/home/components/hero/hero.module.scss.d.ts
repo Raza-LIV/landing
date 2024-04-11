@@ -1,0 +1,12 @@
+export declare const heroWrapper: string
+export declare const heroWrapperDark: string
+export declare const heroWrapperLight: string
+export declare const heroContentBlock: string
+export declare const centeredText: string
+export declare const companyNameText: string
+export declare const sloganText: string
+export declare const sloganTextDark: string
+export declare const sloganTextLight: string
+export declare const descriptionText: string
+export declare const textsHolder: string
+export declare const textsBlock: string

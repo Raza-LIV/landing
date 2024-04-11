@@ -1,0 +1,78 @@
+@use "../../styles/mixins.module.scss" as mixins;
+
+.container {
+  max-width: 68px;
+  justify-self: flex-end;
+}
+
+.switcher {
+  display: grid;
+  grid-template-columns: repeat(2, 32px);
+  padding: 2px;
+  border: none;
+  position: relative;
+}
+
+.radio {
+  appearance: none;
+  margin: 0;
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+  z-index: 1111;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible~div {
+    box-shadow: 0 0 0 2px black;
+  }
+
+  filter: invert(0);
+
+  &:checked {
+    filter: invert(1);
+  }
+}
+
+.status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 0 2px #d1d1d1;
+  z-index: 111;
+  border-radius: 18px;
+  background-color: #ffffff80;
+  background-repeat: no-repeat;
+  background-image: url(/assets/icons/status.svg);
+  background-size: 32px;
+  background-position: center;
+  transition: all 0.1s ease-in;
+}
+
+.legend {
+  @include mixins.hidden-el;
+}
+
+.radioLight {
+  background-image: url(/assets/icons/sun.svg);
+}
+
+.radioLight:checked~div {
+  background-position: left 2px center;
+}
+
+.radioDark {
+  background-image: url(/assets/icons/moon.svg);
+}
+
+.radioDark:checked~div {
+  background-position: right 2px center;
+}

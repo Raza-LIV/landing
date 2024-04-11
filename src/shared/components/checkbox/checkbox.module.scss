@@ -1,0 +1,85 @@
+.reactAriaCheckbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-family: var(--fredoka);
+
+    .checkbox {
+        width: 24px;
+        height: 24px;
+        border: 2px solid var(--primary);
+        transition: all .2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & svg {
+        width: 18px;
+        height: 18px;
+        fill: none;
+        stroke: var(--white);
+        stroke-width: 2.5px;
+        stroke-dasharray: 22px;
+        stroke-dashoffset: 66;
+        transition: all 200ms;
+    }
+
+    &[data-pressed] .checkbox {
+        border-color: var(--dark-silver);
+    }
+
+    &[data-selected],
+    &[data-indeterminate] {
+        .checkbox {
+            border-color: var(--blue-violet);
+            background: var(--blue-violet);
+        }
+
+        &[data-pressed] .checkbox {
+            border-color: var(--crayola);
+            background: var(--crayola);
+        }
+
+        & svg {
+            stroke-dashoffset: 44;
+        }
+    }
+
+    &[data-invalid] {
+        .checkbox {
+            border-color: var(--sunset-orange);
+        }
+
+        &[data-pressed] .checkbox {
+            border-color: var(--tulip);
+        }
+
+        &[data-selected],
+        &[data-indeterminate] {
+        .checkbox {
+            background: var(--sunset-orange);
+        }
+
+        &[data-pressed] .checkbox {
+            background: var(--tulip);
+        }
+        }
+    }
+
+    &[data-indeterminate] {
+        & svg {
+            stroke: none;
+            fill: var(--white);
+        }
+    }
+
+    &[data-focus-visible] .checkbox {
+        box-shadow: 0 0 0 2px var(--dark-silver), 0 0 0 4px var(--crayola);
+    }
+
+    &[data-disabled] {
+        opacity: 0.4;
+    }
+}

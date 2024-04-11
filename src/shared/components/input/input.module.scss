@@ -1,0 +1,51 @@
+.textField {  
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    max-width: 193px;
+    text-align: left;
+    font-family: var(--figtree);
+    
+    .input {
+        margin: 0;
+        background: var(--white);
+        font-size: 16px;
+        color: var(--reverted-accent-color);
+        padding: 14px 12px;
+        border-radius: 6px;
+        border: 1px solid var(--new-car);
+        font-family: var(--figtree);
+
+        &[data-invalid] {
+            border-color: var(--sunset-orange);
+        }
+
+        &[data-focused] {
+            outline: none;
+            border-color: var(--blue-violet);
+            box-shadow: 0 0 0 1px var(--blue-violet);
+        }
+
+        &[data-disabled] {
+            border-color: var(--dark-silver);
+            color: var(--dark-silver);
+        }
+    }
+}
+
+.inputError {
+    border-color: var(--lust) !important;
+}
+
+.error {
+    font-size: 14px;
+    color: var(--lust);
+    margin-left: 12px;
+    margin-top: 4px;
+}
+
+.label {
+    margin-left: 12px;
+    margin-bottom: 4px;
+    font-family: var(--figtree);
+}

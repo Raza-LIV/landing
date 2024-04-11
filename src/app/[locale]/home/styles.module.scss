@@ -1,0 +1,17 @@
+.wrapper {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 70px 1fr;
+}
+
+.header {
+	background-color: var(--maximum-blue-purple);
+	display: flex;
+	width: 100%;
+  	align-self: baseline;
+	justify-self: baseline;
+	padding: 10px;
+	gap: 10px;
+	justify-content: flex-end;
+	align-items: center;
+}

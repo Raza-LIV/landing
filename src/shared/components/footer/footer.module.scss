@@ -1,0 +1,40 @@
+.footer {
+	height: 66px;
+	padding: 0px 48px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--background);
+
+	&>p {
+		color: var(--navlink-active);
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+}
+
+.footerNav {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.footerText {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.5px;
+	letter-spacing: -0.01em;
+	color: var(--grey-40);
+}
+
+.footerLink {
+	text-decoration: none;
+	line-height: 24px;
+}
+
+.footerLang {
+	// TODO: Mark change this to var
+	color: #717680;
+	font-weight: 600;
+}
